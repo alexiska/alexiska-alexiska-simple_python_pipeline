@@ -11,8 +11,8 @@ To run:
 """
 
 
-#def test_this_will_always_crash():
-    # Assert:
+# def test_this_will_always_crash():
+# Assert:
 #    assert False
 
 
@@ -32,14 +32,14 @@ def test_bin_my_number():
     assert result == "[10-20)"
 
 
-#def test_bin_my_number_FAILING():
-    # Arrange:
+# def test_bin_my_number_FAILING():
+# Arrange:
 #    input_value = "This input will crash the function"
 
-    # Act:
+# Act:
 #    result = bin_number_to_tens(input_value)
 
-    # Assert:
+# Assert:
 #    assert result == "[10-20)"
 
 
@@ -66,11 +66,11 @@ def test_bin_over_many_inputs_by_using_parameterize(input_value, expected):
     assert result == expected
 
 
-#def test_assert_raising_error():
-    # Arrange:
+# def test_assert_raising_error():
+# Arrange:
 #    input_value = -10
 
-    # Act and Assert:
+# Act and Assert:
 #    with pytest.raises(NotImplementedError) as my_error:
 #        result = bin_number_to_tens(input_value)
 
