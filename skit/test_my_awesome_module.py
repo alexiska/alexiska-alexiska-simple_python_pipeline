@@ -20,15 +20,6 @@ def test_this_will_always_pass():
     assert True
 
 
-def test_bin_my_number():
-    # Arrange:
-    input_value = 10
-
-    # Act:
-    result = bin_number_to_tens(input_value)
-
-    # Assert:
-    assert result == "[10-20)"
 
 
 def test_bin_my_number_FAILING():
