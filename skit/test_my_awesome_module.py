@@ -75,10 +75,10 @@ def test_bin_over_many_inputs_by_using_parameterize(input_value, expected):
 #        result = bin_number_to_tens(input_value)
 
 
-def test_assert_raising_error_FAILING():
-    # Arrange:
-    input_value = 10
+# def test_assert_raising_error_FAILING():
+# Arrange:
+#    input_value = 10
 
-    # Act and Assert:
-    with pytest.raises(NotImplementedError) as my_error:
-        result = bin_number_to_tens(input_value)
+# Act and Assert:
+#    with pytest.raises(NotImplementedError) as my_error:
+#        result = bin_number_to_tens(input_value)
