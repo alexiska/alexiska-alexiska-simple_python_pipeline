@@ -28,7 +28,7 @@ def test_bin_my_number():
     result = bin_number_to_tens(input_value)
 
     # Assert:
-    assert result == "[10-20)"
+    assert result == "[10-20]"
 
 
 def test_bin_my_number_FAILING():
@@ -39,20 +39,20 @@ def test_bin_my_number_FAILING():
     result = bin_number_to_tens(input_value)
 
     # Assert:
-    assert result == "[10-20)"
+    assert result == "[10-20]"
 
 
 @pytest.mark.parametrize(
     "input_value,expected",
     [
-        (0, "[0-10)"),
-        (1, "[0-10)"),
-        (2, "[0-10)"),
-        (3, "[0-10)"),
-        (4, "[0-10)"),
-        (5, "[0-10)"),
-        (15, "[10-20)"),
-        (25, "[20-30)"),
+        (0, "[0-10]"),
+        (1, "[0-10]"),
+        (2, "[0-10]"),
+        (3, "[0-10]"),
+        (4, "[0-10]"),
+        (5, "[0-10]"),
+        (15, "[10-20]"),
+        (25, "[20-30]"),
     ]
 )
 def test_bin_over_many_inputs_by_using_parameterize(input_value, expected):
