@@ -23,10 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: check formatting with  black 
-        run: |
-          pip install black
-          black . --check
+      - uses: RojerGS/python-black-check@master
       - name: Running pytest
         run: | 
           pytest skit/test_my_awesome_module.py
