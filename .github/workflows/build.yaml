@@ -27,3 +27,6 @@ jobs:
         run: |
           pip install black
           black . --check
+      - name: Running pytest
+        run: | 
+          pytest skit/test_my_awesome_module.py
